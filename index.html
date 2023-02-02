@@ -1,0 +1,855 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>P01 - Style Guide</title>
+  <link href="css/main.css" rel="stylesheet">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400&family=Space+Mono&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+  <header>
+    <h1>P01 - Style Guide</h1>
+    <p>Style guide for a keyboard brand. Kyle Zhao, 301469553, D102.</p>
+
+    <nav>
+      <a class="link-text"  href="#interactive_elements">Interactive Elements</a>
+      <a class="link-text" href="#text_elements">Text Elements</a>
+      <a class="link-text" href="#combined_elements">Combined Elements</a>
+      <a class="link-text" href="#product_listing">Product Listing Template</a>
+      <a class="link-text" href="#checkout">Checkout Template</a>
+      <a class="link-text" href="#citations">Citations</a>
+    </nav>
+    
+    <!-- INTERACTIVE ELEMENTS SECTION // -->
+    <section id="interactive_elements">
+      <h2>Interactive Elements</h2>
+
+
+      <section class="element">
+        <h3>In-text link</h3>
+        <h4>CSS selector:</h4>
+        <p>.link-text</p>
+
+        <h4>Sample code:</h4>
+        <code>&lt;a href="url" class="link-text"&gt; in-text link&lt;/a&gt;</code>
+
+        <h4>Rendered element:</h4>
+        <a href="url" class="link-text">in-text link</a>
+        
+      </section>
+
+
+      <!-- Default Button styling section -->
+      <section class="element">
+
+        <h3>Navigation Link</h3>
+        <h4>CSS selectors:</h4>
+        <p>.nav-bar-links, .button-nav</p>     
+
+        <h4>Sample code:</h4>
+        <code>
+          &lt;div class="nav-bar-links">
+          <br>&lt;a class="button-nav" href="#">Button1&lt;/a>
+        </code>
+
+        <h4>Rendered element:</h4>
+        <div class="nav-bar-links">
+          <a class="button-nav" href="#">Button1</a>
+      </section>
+
+      <section class="element">
+        <h3>Navigation buttons</h3>
+
+        <h4>CSS selectors:</h4>
+        <p>.button-nav-magenta, .button-nav-turquoise, .button-nav-style-magenta, .button-nav-style-turquoise</p>     
+
+        <h4>Sample code:</h4>
+        <code>&lt;a href="#" class="button-nav-magenta"&gt;Default Button&lt;/a&gt;
+        <br>&lt;a href="#" class="button-nav-turquoise"&gt;Default Style 2&lt;/a&gt;
+        <br>&lt;a href="#" class="button-nav-style-magenta"&gt;Style magenta&lt;/a&gt;
+        <br>&lt;a href="#" class="button-nav-style-turquoise"&gt;Style Turquoise&lt;/a&gt;</code>
+
+        <h4>Rendered element:</h4>
+        <a class="button-nav-magenta" href="#">Default Button</a>
+        <a class="button-nav-turquoise" href="#">Default Style 2</a>
+        <a class="button-nav-style-magenta" href="#">Style magenta</a>
+        <a class="button-nav-style-turquoise" href="'#">Style Turquoise</a>
+      </section>
+      
+      <section class="element">
+        <h3>Submit/Reset Buttons</h3>
+        <h4>CSS selector:</h4>
+        <p>.button-submit-reset</p>
+
+        <h4>Sample code:</h4>
+        <code>
+          &lt;input class="button-submit-reset" type="submit" value="submit"&gt;
+        </code>
+
+        <h4>Rendered element:</h4>
+        <input class="button-submit-reset" type="submit" value="submit" >
+      </section>
+
+
+      <section class="element">
+        <h3>Text Input Field with Label</h3>
+        <h4>CSS selector:</h4>
+        <p>input</p>
+
+        <h4>Sample code:</h4>
+        <code>&lt;form action="/url" method="GET"&gt;
+          <br>&lt;label&gt;Label&lt;/label&gt;
+          <br>&lt;input type="text" placeholder="placeholder text"&gt;
+          <br>&lt;/form&gt;
+        </code>
+        <h4>Rendered element:</h4>
+        <form action="/url" method="GET">
+          <label for="input name">label</label>
+          <input name="input name" type="text" placeholder="placeholder text">
+        </form>
+      </section>
+
+
+      <section class="element">
+        <h3>Radio Button with Label</h3>
+        <h4>CSS selector:</h4>
+        <p>.radio</p>
+
+        <h4>Sample code:</h4>
+        <code>&lt;input class="custom-radio" type="radio" id="type" value="value" name="name" checked&gt;
+        <br>&lt;label for="type"&gt; radio &lt;/label&gt;
+        <br>&lt;input class="custom-radio" type="radio" id="type2" value="value" name="name" checked&gt;
+        <br>&lt;label for="type2"&gt; radio &lt;/label&gt;
+        </code>
+        <h4>Rendered element:</h4>
+
+        <form>
+          <input type="radio" id="type" value="value" name="name" checked>
+          <label for="type">radio</label>
+
+          <input type="radio" id="type2" value="value" name="name">
+          <label for="type2">radio</label>
+        </form>
+
+      </section>
+
+
+      <section class="element">
+        <h3>Image as a Link</h3>
+        <h4>CSS selector:</h4>
+        <p>.link-image</p>
+
+        <h4>Sample code:</h4>
+        <code>
+          &lt;a  href="https://unsplash.com/photos/QBenxna2RF4"&gt;
+          <br>&lt;img class = "link-image" src="/img/peppy-toad-whitekeyboard-unsplash.jpg" width="50%" height=auto&gt; 
+          <br>&lt;/a&gt;
+
+        </code>
+
+        <!-- photo from https://unsplash.com/photos/QBenxna2RF4-->
+        <h4>Rendered element:</h4>
+        <a href="https://unsplash.com/photos/QBenxna2RF4">
+          <img class = "link-image" src="peppy-toad-whitekeyboard-unsplash.jpg" width="50%" height=auto>
+        </a>
+
+      </section>
+
+
+    </section>
+    <!-- // INTERACTIVE ELEMENTS SECTION -->
+
+    <!-- TEXT ELEMENTS SECTION // -->
+    <section id="text_elements">
+      <h2>Text Elements</h2>
+      <section class="element">
+      <h4>CSS selector:</h4>
+      <p>h1</p>
+      <p>h2</p>
+      <p>h3</p>
+      <p>h4</p>
+      <p>h5</p>
+
+      <h4>Sample Code:</h4>
+      <code>
+        &lt;h1&gt;Heading 1&lt;/h1&gt;
+        <br>&lt;h2&gt;Heading 2&lt;/h2&gt;
+        <br>&lt;h3&gt;Heading 3&lt;/h3&gt;
+        <br>&lt;h4&gt;Heading 4&lt;/h4&gt;
+        <br>&lt;h5&gt;Heading 5&lt;/h5&gt;
+      </code>
+
+      <h4>Rendered element:</h4>
+      <h1>Heading 1</h1>
+      <h2>Heading 2</h2>
+      <h3>Heading 3</h3>
+      <h4>Heading 4</h4>
+      <h5>Heading 5</h5>      
+      </section>
+
+      <section class="element">
+        <h3>Paragraphs</h3>
+        <h4>CSS selector:</h4>
+        <p>p</p>
+
+        <h4>Sample code:</h4>
+        <code>&lt;p&gt;In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content. Lorem ipsum may be used as a placeholder before final copy is available. &lt;/p&gt;</code>
+
+        <h4>Rendered element:</h4>
+        <p>In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content. Lorem ipsum may be used as a placeholder before final copy is available.</p>
+
+      </section>
+
+      <section class="element">
+        <h3>Numbered Lists</h3>
+        <h4>CSS selector:</h4>
+        <p>ol</p>
+
+        <h4>Sample code:</h4>
+        <code>
+          &lt;ol&gt;
+          <br>&lt;li&gt;element 1&lt;/li&gt;
+          <br>&lt;li&gt;element 2&lt;/li&gt;
+          <br>&lt;/ol&gt;
+        </code>
+        <h4>Rendered element:</h4>
+        <ol>
+          <li>element 1</li>
+          <li>element 2</li>
+        </ol>
+      </section>
+
+    </section>
+    <!-- // TEXT ELEMENTS SECTION -->
+
+
+
+    <!-- COMBINED ELEMENTS SECTION // -->
+    <section id="combined_elements">
+      <h2>Combined Elements</h2>
+
+      <section class="element">
+        <h3>Main Navigation - aligned right</h3>
+        <h4>CSS selectors:</h4>
+        <p>main-nav, nav-bar-links, .button-nav </p>
+
+        <h4>Sample code:</h4>
+        <code>
+              &lt;nav class="main-nav"&gt;
+              <br>&lt;ul class="nav-bar-links"&gt;
+              <br>&lt;li&gt;&lt;a href="#" class="button-nav"&gt;Button1&lt;/a&gt;&lt;/li&gt;
+              <br>&lt;li&gt;&lt;a href="#" class="button-nav"&gt;Button2&lt;/a&gt;&lt;/li&gt;
+              <br>&lt;li&gt;&lt;a href="#" class="button-nav"&gt;Button3&lt;/a&gt;&lt;/li&gt;
+              &lt;/ul&gt;
+              <br>&lt;/nav&gt;
+        </code>
+
+        <h4>Rendered element:</h4>
+
+        <nav class="main-nav">
+          <ul class="nav-bar-links">
+            <li>
+              <a class="button-nav" href="#">Featured</a>
+            </li>
+            <li>
+              <a class="button-nav" href="#">Shop All</a>
+            </li>
+            <li>
+              <a class="button-nav" href="#">View Cart</a>
+            </li>            
+          </ul>
+        </nav>
+
+      </section>
+
+      <section class="element" id="product_listing">
+        <h3>Product Listing/card</h3>
+        <h4>CSS selector:</h4>
+        <p>.product-listings, .product-listings-card, .product-listing-img, .product-listing-content, .product-listings-card-link</p>
+        <h4>Sample code for one card:</h4>
+        <code>
+          &lt;div class="product-listing"&gt;
+          
+          <br><br>&lt;div class="product-listings-card">
+
+          <br>&lt;img class="product-listing-img" src="peppy-toad-whitekeyboard-unsplash.jpg">
+          <br><br>&lt;div class="product-listing-content">
+          <br>&lt;h2>Product name&lt;/h2>   
+          <br>&lt;/div>
+          <br><br>&lt;div class="product-listings-card-link">            
+          <br>&lt;h3>$123.00&lt;/h3>
+          <br>&lt;a class="button-nav-magenta" href="#">Learn More&lt;/a>
+          <br>&lt;/div>
+          <br>&lt;/div>
+
+          <br><br>&lt;/div&gt;
+        </code>
+        
+        <h4>Rendered element:</h4>
+        <div class="product-listings">
+
+          <div class="product-listings-card">
+
+            <img class="product-listing-img" src="peppy-toad-whitekeyboard-unsplash.jpg">
+            <div class="product-listing-content">
+              <h2>Product name</h2>    
+            </div>
+            <div class="product-listings-card-link">            
+              <h3>$123.00</h3>
+              <a class="button-nav-magenta" href="#">Learn More</a>
+            </div>
+          </div>
+
+          <div class="product-listings-card">
+            <img class="product-listing-img" src="White keyboard.jpeg">
+
+            <div class="product-listing-content">
+              <h2>Product name</h2>        
+            </div>
+            <div class="product-listings-card-link">            
+              <h3>$123.00</h3>
+              <a class="button-nav-magenta" href="#">Learn More</a>
+            </div>
+          </div>
+
+          <div class="product-listings-card">
+
+            <img class="product-listing-img" src="Paul keyboard.jpeg">
+
+            <div class="product-listing-content">
+              <h2>Product name</h2>
+            </div>
+            <div class="product-listings-card-link">            
+              <h3>$123.00</h3>
+              <a class="button-nav-magenta" href="#">Learn More</a>
+            </div>
+          </div>
+
+          
+          
+        </div>
+      </section>
+
+      <section class="element">
+        <h3>Product listing gallery</h3>
+        <h4>CSS selector:</h4>
+        <p>.product-listings-gallery, .product-listings-gallery-card, .product-listing-content, .product-listings-card-link</p>
+        <h4>Sample code for two card:</h4>
+        
+        <code>
+          &lt;div class="product-listings-gallery">
+          <br>&lt;div class="product-listings-gallery-card">
+          <br>&lt;div class="product-listing-content">
+          <br>&lt;h2>&lt;span>Product name&lt;/span>&lt;/h2>
+          <br>&lt;p>&lt;span>description here&lt;/p>
+          <br>&lt;/div>
+          <br>&lt;div class="product-listings-card-link">            
+          <br>&lt;h3>&lt;span>$123.00&lt;/span>&lt;/h3>
+          <br>&lt;a class="button-nav-magenta-border" href="#">Learn More&lt;/a>
+          <br>&lt;/div>
+          <br>&lt;/div>
+          <br>
+          <br>&lt;div class="product-listings-gallery-card">
+          <br>&lt;div class="product-listing-content">
+          <br>&lt;h2>&lt;span>Product name&lt;/span>&lt;/h2> 
+          <br>&lt;p>&lt;span>description here&lt;/p>
+   
+          <br>&lt;/div>
+          <br>&lt;div class="product-listings-card-link">            
+          <br>&lt;h3>&lt;span>$123.00&lt;/span>&lt;/h3>
+          <br>&lt;a class="button-nav-magenta-border" href="#">Learn More&lt;/a>
+          <br>&lt;/div>
+          <br>&lt;/div>
+          <br>&lt;/div>       
+        </code>
+
+        <h4>Rendered element:</h4>
+        <div class="product-listings-gallery">
+          <div class="product-listings-gallery-card">
+            <div class="product-listing-content">
+              <h2><span>Product name</span></h2>
+              <p><span>description here</span></p>
+            </div>
+            <div class="product-listings-card-link">            
+              <h3><span>$123.00</span></h3>
+              <a class="button-nav-magenta-border" href="#">Learn More</a>
+            </div>
+          </div>
+
+          <div class="product-listings-gallery-card-second">
+            <div class="product-listing-content">
+              <h2><span>Product name</span></h2>    
+              <p><span>description here</span></p>
+            </div>
+            <div class="product-listings-card-link">            
+              <h3><span>$123.00</span></h3>
+              <a class="button-nav-magenta-border" href="#">Learn More</a>
+            </div>
+          </div>
+          
+        </div>
+        
+        <h4>Nav bar, product gallery and scrollable gallery rendered:</h4>
+
+        <nav class="main-nav">
+          <ul class="nav-bar-links">
+            <li>
+              <a class="button-nav" href="#">Featured</a>
+            </li>
+            <li>
+              <a class="button-nav" href="#">Shop All</a>
+            </li>
+            <li>
+              <a class="button-nav" href="#">View Cart</a>
+            </li>            
+          </ul>
+        </nav>
+
+        <div class="product-listings-gallery">
+          <div class="product-listings-gallery-card">
+            <div class="product-listing-content">
+              <h2><span>Product name</span></h2>
+              <p><span>description here</span></p>
+            </div>
+            <div class="product-listings-card-link">            
+              <h3><span>$123.00</span></h3>
+              <a class="button-nav-magenta-border" href="#">Learn More</a>
+            </div>
+          </div>
+
+          <div class="product-listings-gallery-card-second">
+            <div class="product-listing-content">
+              <h2><span>Product name</span></h2>    
+              <p><span>description here</span></p>
+            </div>
+            <div class="product-listings-card-link">            
+              <h3><span>$123.00</span></h3>
+              <a class="button-nav-magenta-border" href="#">Learn More</a>
+            </div>
+          </div>
+        </div><div class="product-listings">
+
+          <div class="product-listings-card">
+
+            <img class="product-listing-img" src="peppy-toad-whitekeyboard-unsplash.jpg">
+            <div class="product-listing-content">
+              <h2>Product name</h2>    
+            </div>
+            <div class="product-listings-card-link">            
+              <h3>$123.00</h3>
+              <a class="button-nav-magenta" href="#">Learn More</a>
+            </div>
+          </div>
+
+          <div class="product-listings-card">
+            <img class="product-listing-img" src="White keyboard.jpeg">
+
+            <div class="product-listing-content">
+              <h2>Product name</h2>        
+            </div>
+            <div class="product-listings-card-link">            
+              <h3>$123.00</h3>
+              <a class="button-nav-magenta" href="#">Learn More</a>
+            </div>
+          </div>
+
+          <div class="product-listings-card">
+
+            <img class="product-listing-img" src="Paul keyboard.jpeg">
+
+            <div class="product-listing-content">
+              <h2>Product name</h2>
+            </div>
+            <div class="product-listings-card-link">            
+              <h3>$123.00</h3>
+              <a class="button-nav-magenta" href="#">Learn More</a>
+            </div>
+          </div>  
+        </div>
+
+      </section>
+
+      <section class="element">
+
+        <h3>Checkout Cart</h3>
+        <h4>CSS selector:</h4>
+        <p>.checkout-cart, .checkout-cart-items, .checkout-item, .checkout-item-img, .link-text, .checkout-summary, .button-submit-reset</p>
+        <h4>Sample code:</h4>
+        <code>
+          &lt;div class="checkout-cart">
+          <br>
+          <br>&lt;div class="checkout-cart-items">
+          <br> <br>&lt;div class="checkout-item ">                
+          <br>&lt;img class="checkout-item-img" src="peppy-toad-whitekeyboard-unsplash.jpg">
+          <br>&lt;a href="url" class="link-text">product name&lt;/a>
+          <br>&lt;h5>white case/red switch/brass plate&lt;/h5>              
+          <br>&lt;h4>1x - $100&lt;/h4>
+          <br>&lt;a href="url" class="link-text">remove&lt;/a> 
+          <br>&lt;/div>
+          <br> <br>&lt;div class="checkout-item">
+          <br>&lt;img class="checkout-item-img" src="White keyboard.jpeg">
+          <br>&lt;a href="url" class="link-text">product name&lt;/a>
+          <br>&lt;h5>white case/red switch/brass plate&lt;/h5>              
+          <br>&lt;h4>2x - $100&lt;/h4>
+          <br>&lt;a href="url" class="link-text">remove&lt;/a>
+          <br>&lt;/div>
+          <br> <br>&lt;/div>            
+          <br> <br>&lt;div class="checkout-summary">
+          <br>&lt;p>subtotal&lt;/p>
+          <br>&lt;p>shipping&lt;/p>
+          <br>&lt;p>tax&lt;/p>
+          <br>&lt;p>Total price&lt;/p>
+          <br>&lt;input class="button-submit-reset" type="submit" value="Proceed to Checkout">
+          <br>&lt;/div>
+          <br> <br>&lt;/div>
+        </code>
+        <h4>Rendered element:</h4>
+        <nav class="main-nav">
+          <ul class="nav-bar-links">
+            <li>
+              <a class="button-nav" href="#">Featured</a>
+            </li>
+            <li>
+              <a class="button-nav" href="#">Shop All</a>
+            </li>
+            <li>
+              <a class="button-nav" href="#">View Cart</a>
+            </li>            
+          </ul>
+        </nav>
+
+        <div class="checkout-cart">
+
+          <div class="checkout-cart-items">
+            <div class="checkout-item ">             
+              
+              <img class="checkout-item-img" src="peppy-toad-whitekeyboard-unsplash.jpg">
+              <a href="url" class="link-text">product name</a>
+              <h5>white case/red switch/brass plate</h5>              
+              <h4>1x - $100</h4>
+              <a href="url" class="link-text">remove</a>
+              
+            </div>
+
+            <div class="checkout-item">
+              <img class="checkout-item-img" src="White keyboard.jpeg">
+              <a href="url" class="link-text">product name</a>
+              <h5>white case/red switch/brass plate</h5>              
+              <h4>2x - $100</h4>
+              <a href="url" class="link-text">remove</a>
+            </div>
+          </div>
+          
+          <div class="checkout-summary">
+            <p>subtotal</p>
+            <p>shipping</p>
+            <p>tax</p>
+            <p>Total price</p>
+            <input class="button-submit-reset" type="submit" value="Proceed to Checkout">
+          </div>
+        </div>
+        
+      </section>
+      <section class="element" id="checkout">
+        <h3>Payment Form</h3>
+        <h4>CSS selector:</h4>
+        <p>.payment-page, .shipping-details, .shipping-address, .shipping-recipient, .payment-details, .payment-expiry, .button-submit-reset</p>
+
+        <h4>Sample code:</h4>
+        <code>
+          &lt;div class="payment-page">
+          <br>
+          <br>&lt;form action="/url" method="GET">
+          <br><br>&lt;fieldset class="shipping-details">
+          <br>&lt;legend>Shipping Details&lt;/legend>
+          <br>&lt;div class="shipping-address">
+          <br>&lt;label>
+          <br>Country
+          <br>&lt;input type="text" name="country" placeholder="Canada">
+          <br>&lt;/label>
+          <br>&lt;label>
+          <br>Address
+          <br>&lt;input type="text" name="Address" <br>placeholder="123 3 AVE Vancouver BC">
+          <br>&lt;/label>
+          <br>&lt;label>
+          <br>Zip Code
+          <br>&lt;input type="text" name="Zip code" placeholder="123 ABC">
+          <br>&lt;/label>
+          <br>&lt;/div>
+          <br>&lt;div class="shipping-recipient">
+          <br>&lt;label>
+          <br>Full Name
+          <br>&lt;input type="text" name="Full name" placeholder="First Last">
+          <br>&lt;/label>
+          <br>&lt;label>
+          <br>Email
+          <br>&lt;input type="text" name="Email" placeholder="abc@email.com">
+          <br>&lt;/label>
+          <br>&lt;/div>                            
+          <br>&lt;/fieldset>
+          <br>      
+          <br>&lt;fieldset>
+          <br>&lt;legend>Payment&lt;/legend>
+          <br>&lt;div class="payment-details">
+          <br>&lt;div>
+          <br>&lt;label>
+          <br>Name on Card
+          <br>&lt;input type="text" name="cardholder" placeholder="John Doe">
+          <br>&lt;/label>
+          <br>&lt;label>
+          <br>Credit card number
+          <br>&lt;input type="text" name="card number" placeholder="1234-1234-1234-1234">
+          <br>&lt;/label>
+          <br>&lt;/div>
+          <br>&lt;div class="payment-expiry">
+          <br>&lt;label>
+          <br>Expiry Month
+          <br>&lt;input type="text" name="exp month" placeholder="05">
+          <br>&lt;/label>
+          <br>&lt;label>
+          <br>Expiry Year
+          <br>&lt;input type="text" name="exp year" placeholder="2027">
+          <br>&lt;/label>
+          <br>&lt;label>
+          <br>CVV       
+          <br>&lt;input type="text" name="CVV" placeholder="123">
+          <br>&lt;/label>
+          <br>&lt;/div>
+          <br>&lt;/div>              
+          <br>&lt;/fieldset>
+          <br><br>&lt;/form>       
+          <br>&lt;input class="button-submit-reset" type="submit" value="Complete Checkout">   
+          <br>&lt;/div>
+        </code>
+
+        <h4>Rendered element:</h4>
+        <nav class="main-nav">
+          <ul class="nav-bar-links">
+            <li>
+              <a class="button-nav" href="#">Featured</a>
+            </li>
+            <li>
+              <a class="button-nav" href="#">Shop All</a>
+            </li>
+            <li>
+              <a class="button-nav" href="#">View Cart</a>
+            </li>            
+          </ul>
+        </nav>
+
+        <div class="payment-page">
+          <form action="/url" method="GET">
+            <fieldset class="shipping-details">
+              <legend>Shipping Details</legend>
+              <div class="shipping-address">
+                <label>
+                  Country
+                  <input type="text" name="country" placeholder="Canada">
+                </label>
+                <label>
+                  Address
+                  <input type="text" name="Address" placeholder="123 3 AVE Vancouver BC">
+                </label>
+                <label>
+                  Zip Code
+                  <input type="text" name="Zip code" placeholder="123 ABC">
+                </label>
+              </div>
+              <div class="shipping-recipient">
+                <label>
+                  Full Name
+                  <input type="text" name="Full name" placeholder="First Last">
+                </label>
+                <label>
+                  Email
+                  <input type="text" name="Email" placeholder="abc@email.com">
+                </label>
+              </div>                            
+            </fieldset>
+            
+            <fieldset>
+              <legend>Payment</legend>
+              <div class="payment-details">
+                <div>
+                  <label>
+                    Name on Card
+                    <input type="text" name="cardholder" placeholder="John Doe">
+                  </label>
+                  <label>
+                    Credit card number
+                    <input type="text" name="card number" placeholder="1234-1234-1234-1234">
+                  </label>
+                </div>
+                <div class="payment-expiry">
+                  <label>
+                    Expiry Month
+                    <input type="text" name="exp month" placeholder="05">
+                  </label>
+                  <label>
+                    Expiry Year
+                    <input type="text" name="exp year" placeholder="2027">
+                  </label>
+                  <label>
+                    CVV       
+                    <input type="text" name="CVV" placeholder="123">
+                  </label>
+                </div>
+              </div>              
+            </fieldset>
+          </form>    
+          <h3>Total:</h3>  
+          <input class="button-submit-reset" type="submit" value="Complete Checkout">   
+        </div>
+        
+      </section>
+
+      
+     
+    </section>
+    <!-- // COMBINED ELEMENTS SECTION -->
+
+    <h2>Brand components - Keyboard brand description:</h2>
+    <p>
+      This company builds and ships high quality keyboards to customers with multiple options. Custom built keyboards can be requested in a seperate request form. This brand will feature new and unique case designs, and gives customers the freedom of matching and pairing elements such as the backplate, switch, and keycaps.
+    <p>
+    <p>
+      This company will be seen as a reliable provider of high build quality artisan keyboards, emphasizing on customizability and self-expression. 
+    </p>
+    <p>
+      This brand is welcoming to both old and new keyboard enthusiasts. Information about specific parts will be given, allowing newcomers to learn.
+    </p>
+
+    <section class="element">
+      <h2> Keyboard part selection - product selection </h2>
+      <h4>CSS selector:</h4>
+        
+      <p>.product-page-details</p>
+      <nav class="main-nav">
+          <ul class="nav-bar-links">
+            <li>
+              <a class="button-nav" href="#">Featured</a>
+            </li>
+            <li>
+              <a class="button-nav" href="#">Shop All</a>
+            </li>
+            <li>
+              <a class="button-nav" href="#">View Cart</a>
+            </li>            
+          </ul>
+      </nav>
+
+      <div class="product-page-details">    
+        <div class="product-page-details-img">
+          <div class="product-page-details-name">
+            <h2><span>Product name</span></h2>
+            <h3><span>$100.00</span></h3>
+            <p><span>Description of the product</span></p>
+            <p><span>more information about the product and the options below</span></p>
+          </div>
+        </div>
+
+        <div class="product-page-details-selection">
+          <h4>Case Color</h4>
+          <input class="radio"type="radio" id="red" value="value" name="color" checked>
+          <label for="red">red</label>
+          <input class="radio"type="radio" id="white" value="value" name="color" checked>
+          <label for="white">white</label>
+          <input class="radio"type="radio" id="acrylic" value="value" name="color" checked>
+          <label for="acrylic">transparent acrylic</label>
+
+          <h4>Backplate</h4>
+          <input class="radio"type="radio" id="brass" value="value" name="plate" checked>
+          <label for="brass">brass</label>
+          <input class="radio"type="radio" id="steel" value="value" name="plate" checked>
+          <label for="steel">steel</label>
+
+          <h4>Switch Type</h4>
+          <input class="radio"type="radio" id="gateron-yellow" value="value" name="switch" checked>
+          <label for="gateron-yellow">Gateron Yellow</label>
+          <input class="radio"type="radio" id="gateron-red" value="value" name="switch" checked>
+          <label for="gateron-red">Gateron Red</label>
+          <input class="radio"type="radio" id="tealios" value="value" name="switch" checked>
+          <label for="tealios">Tealios</label>
+          <input class="radio"type="radio" id="zelios" value="value" name="switch" checked>
+          <label for="zelios">Zealios 67</label>
+          <input class="radio"type="radio" id="jade" value="value" name="switch" checked>
+          <label for="jade">Box Jade</label>
+
+          <input class="button-submit-reset" type="submit" value="Add to Cart">
+          <p>Learn more about this kit below</p>
+        </div>
+
+      </div>
+    </section>
+
+    <h1>Branding</h1>
+    <h2>Roboto - for headings and leadings <br> <span>Space Mono - general text</span></h2>
+ 
+
+    <p>Roboto will be used for headings and leadings. Space mono reflects the structure and organized spacing of keyboard keys. Having a monospaced font will create further contrast between the heading font.</p>
+
+    <h2>Colour palette</h2>
+    <div class="colour-palettes">
+      <div class="colour-palette-white">
+        <p>F6F6F6 - White</p>
+      </div>
+      <div class="colour-palette-black">
+        <p>0C080A - Rich Black</p>
+      </div>
+      <div class="colour-palette-turquoise">
+        <p>6DD3CE - Medium Turquoise</p>
+
+      </div>
+      <div class="colour-palette-magenta">
+        <p>FE5D9F - Brilliant Rose</p>
+      </div>
+    </div>
+    <p> 
+      with the use of monotone colors of black and white, the turquoise and bright magenta colors create further contrast between headings, leadings, prices, and buttons relative to the rest of the page. Regular text will be either black or white depending on their background. Contrary to many other keyboard brand websites that invlove purely monotone and rounded borders, this branding will appear angular, complementing the structured mono space font and further contrasting the pops of magenta and turquoise highlights.
+      
+      Headings may also use the black and white colors, or the other vibrant pair which contrasts with it's paired imagery. Specifically, vibrant keyboard designs may be paired with a white or black heading to contrast each other, and keyboards with monotone colors will be paired with a vibrant heading. 
+    </p>
+
+    <h2>Potential Imagery</h2>
+    <div class="imagery">
+        <a href="https://unsplash.com/photos/QBenxna2RF4">
+          <img class = "link-image" src="peppy-toad-whitekeyboard-unsplash.jpg" width=100% height=auto>
+        </a>
+        <a href="https://unsplash.com/photos/C3yLFQZUW6Q">
+          <img class = "link-image" src="White keyboard.jpeg" width="100%" height=auto>
+        </a>
+        <a href="https://unsplash.com/photos/b20J7YbTK8w">
+          <img class = "link-image" src="Bernin Uben Keyboard.jpeg" width="100%" height=auto>
+        </a>
+        <a href="https://unsplash.com/photos/qrdwJfAAVEI">
+          <img class = "link-image" src="Paul keyboard.jpeg" width="100%" height=auto>
+        </a>
+    </div>
+
+    <section id="citations">
+      <h2>Citations</h2>
+      <ul>
+        <li>
+          <a href="https://fonts.google.com/specimen/Roboto">https://fonts.google.com/specimen/Roboto</a>
+        </li>
+        <li>
+          <a href="https://fonts.google.com/specimen/Space+Mono">https://fonts.google.com/specimen/Space+Mono</a>
+        </li>
+        <li>Martsoukos, George. Designer. 2022. <strong>2 Ways to Build a Scrolling Card UI (Flexbox and CSS Grid)[Article]</strong>. Retrieved from <a href="https://webdesign.tutsplus.com/tutorials/horizontal-scrolling-card-ui-flexbox-and-css-grid--cms-41922">https://webdesign.tutsplus.com/tutorials/horizontal-scrolling-card-ui-flexbox-and-css-grid--cms-41922</a>.</li>
+
+        <li>Mozilla. 2023. <strong>Html Elements [Html Documentation]</strong>. Retrieved from <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/radio#see_also">https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/radio#see_also</a>.</li>
+        
+      </ul>
+    </section>
+  </header>
+</body>
+
+</html>
